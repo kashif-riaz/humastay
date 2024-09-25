@@ -198,6 +198,14 @@ header {
   margin-top: 4.7rem;
 }
 
+.padd-right {
+  padding-right: 1.2rem;
+}
+
+.padd-left {
+  padding-left: 1.2rem;
+}
+
 // Making the Best Residance
 
 .residency-pad-blk {
@@ -210,6 +218,8 @@ header {
   .residancy-content {
     padding-right: 3rem;
     h2 {
+      font-family: "Playfair Display", serif;
+      font-style: italic;
       font-size: $fs-48;
       font-weight: $fw-700;
       color: $green-color;
@@ -305,6 +315,7 @@ header {
 
 .facility-heading {
   h2 {
+    font-family: "Playfair Display", serif;
     font-size: $fs-48;
     font-weight: $fw-700;
     color: $green-color;
@@ -454,6 +465,159 @@ header {
     width: 329px;
     height: 160px;
   }
+}
+
+// What Our Customers Saying
+
+.customer-say-pad-blk {
+  padding-block: 7.4rem 8rem;
+  background-color: #fffbe8;
+}
+
+.our-customer-content {
+  padding-right: 2rem;
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: $fs-48;
+    font-weight: $fw-700;
+    font-style: italic;
+    color: $green-color;
+  }
+  h3 {
+    padding-block: 2rem 3rem;
+    font-size: $fs-48;
+    font-weight: $fw-600;
+    color: $green-color;
+  }
+  p {
+    font-size: $fs-18;
+    font-weight: $fw-600;
+    color: #181818;
+  }
+}
+
+.carasousel {
+  border-radius: 0px 50px 50px 0px;
+  border: 1px solid #c7c7c7;
+  background-color: $white-color;
+  padding: 5.4rem 3.2rem 4.1rem 10.7rem;
+  position: relative;
+  min-width: 547px;
+  min-height: 370px;
+  img {
+    position: absolute;
+  }
+
+  .top {
+    top: -10%;
+    left: -8%;
+  }
+  .center {
+    top: 50%;
+    left: -11%;
+    transform: translateY(-50%);
+  }
+  .bottom {
+    bottom: -10%;
+    left: -8%;
+  }
+  h2 {
+    font-size: $fs-24;
+    font-weight: $fw-600;
+    color: #181818;
+  }
+  p {
+    padding-block: 4.8rem 3.1rem;
+    font-size: $fs-18;
+    font-weight: $fw-600;
+    color: #181818;
+  }
+  .rates {
+    .star {
+      p {
+        color: $green-color;
+        .star-img {
+          position: static;
+          margin-right: 1.2rem;
+        }
+
+        span {
+          color: #989898;
+        }
+      }
+    }
+  }
+}
+
+// Swiper
+
+.swiper-slide {
+  padding: 4rem 7rem 4rem 15rem !important;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "";
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 0;
+  height: 0;
+  margin: 0 !important;
+}
+
+.swiper-button-next {
+  position: absolute;
+  top: 95%;
+  left: 0%;
+}
+
+.swiper-button-prev {
+  position: absolute;
+  top: 5% !important;
+  left: 0% !important;
+}
+
+.swiper-pagination-fraction {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0%;
+  color: $white-color;
+  padding: 2rem 1rem;
+  background-color: $green-color;
+  width: 43px;
+  height: 134px;
+  border-radius: 5rem;
+  font-size: 2rem;
+  font-weight: $fw-600;
+}
+
+.swiper-pagination-fraction .swiper-pagination-current {
+  color: #b7f843;
+}
+
+.append-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.append-buttons button {
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid #007aff;
+  color: #007aff;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin: 0 10px;
+  font-size: 13px;
 }
 
 // Footer
@@ -664,7 +828,7 @@ header {
     .vip-content {
       align-self: center;
       .rooms-detail {
-        padding: 0.8rem;
+        padding: 1.8rem;
         .sunflower {
           img {
             margin-right: 0.6rem;
@@ -700,6 +864,14 @@ header {
         }
       }
     }
+  }
+
+  .padd-right {
+    padding-right: 0rem;
+  }
+
+  .padd-left {
+    padding-left: 0rem;
   }
   // Making the Best Residance
 
@@ -900,6 +1072,99 @@ header {
       width: 220px;
       height: 68px;
     }
+  }
+
+  // What Our Customers Saying
+
+  .customer-say-pad-blk {
+    padding-block: 2rem 4rem;
+    background-color: #fffbe8;
+  }
+
+  .our-customer-content {
+    padding-right: 0rem;
+    text-align: center;
+    h2 {
+      font-size: $fs-36;
+    }
+    h3 {
+      padding-block: 1rem 2rem;
+      font-size: $fs-32;
+    }
+  }
+
+  .carasousel {
+    padding: 1.8rem 1.2rem 1.3rem 5.4rem;
+    margin-right: 1rem;
+    position: relative;
+    min-width: 100%;
+    min-height: 100%;
+    img {
+      position: absolute;
+    }
+
+    .top {
+      top: -5% !important;
+      left: -5% !important;
+      width: 50px;
+      height: 50px;
+    }
+    .center {
+      left: -10% !important;
+      width: 70px;
+      height: 70px;
+    }
+    .bottom {
+      bottom: -5% !important;
+      left: -5% !important;
+      width: 50px;
+      height: 50px;
+    }
+    h2 {
+      font-size: $fs-14;
+    }
+    p {
+      padding-block: 2.6rem;
+      font-size: $fs-14;
+    }
+    .rates {
+      .star {
+        p {
+          color: $green-color;
+          .star-img {
+            position: static;
+            margin-right: 1.2rem;
+          }
+
+          span {
+            color: #989898;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-fraction {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0%;
+    color: #fff;
+    padding: 0.8rem 0.4rem;
+    background-color: #07617d;
+    width: 25px;
+    height: 91px;
+    border-radius: 5rem;
+    font-size: $fs-14;
+    font-weight: 600;
+  }
+
+  .swiper-slide {
+    padding: 4rem 0rem 4rem 6rem !important;
+  }
+
+  .carasousel img {
+    position: absolute;
   }
 
   // Footer
