@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Tittle -->
+
+    <link
+      rel="icon"
+      href="./images/favicon-logo.png"
+      sizes="16x16"
+      type="image/x-icon"
+    />
+    <title>HumaStay</title>
+
+    <!-- Font-Awesome  -->
+
+    <script
+      src="https://kit.fontawesome.com/767ec3b54e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Style Sheet  -->
+
+    <link rel="stylesheet" href="./Scss/reset.css" />
+    <link rel="stylesheet" href="./Scss/main.css" />
+  </head>
+  <body>
+    <!-- Header Section Start  -->
+
+    <div class="header-hero-bg">
+      <header>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <div>
+                <img
+                  class="img-fluid d-none d-lg-flex"
+                  src="./images/company-logo.png"
+                  alt="Company logo"
+                />
+                <img
+                  class="img-fluid d-lg-none"
+                  src="./images/company-logo-mobile.png"
+                  alt="Company logo"
+                />
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <img src="./images/Menu-bar.png" alt="" />
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Room</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Facility</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Hero Section Start  -->
+
+      <section>
+        <div class="container hero-section">
+          <img
+            class="img-fluid d-lg-none"
+            src="./images/hero-img-mobile.png"
+            alt="hero image"
+          />
+          <h1>Find your perfect place to stay</h1>
+          <p class="hero-para">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+            nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+            vitae nibh nunc mattis imperdiet sed nullam.
+          </p>
+          <div
+            class="detail d-flex flex-wrap justify-content-between aligns-items-center"
+          >
+            <div
+              class="location d-flex justify-content-between align-items-center"
+            >
+              <div class="location-para">
+                <p class="loc-para">Location</p>
+              </div>
+              <div>
+                <img src="./images/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="location d-flex justify-content-between align-items-center"
+            >
+              <div class="location-para">
+                <p class="loc-para">Room</p>
+              </div>
+              <div>
+                <img src="./images/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="location d-flex justify-content-between align-items-center"
+            >
+              <div class="location-para">
+                <p class="loc-para">Price</p>
+              </div>
+              <div>
+                <img src="./images/down-arrow.png" alt="" />
+              </div>
+            </div>
+            <button class="detail-btn">Search</button>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Our Hits Room’s -->
+    <section>
+      <div class="container">
+        <div class="hit-rooms-parent">
+          <h2>Our Hits Room’s</h2>
+          <p>Choosen by All Generation</p>
+          <div class="hit-btn d-flex flex-column flex-lg-row">
+            <button>All</button>
+            <button>VIP</button>
+            <button>Regular</button>
+          </div>
+          <div
+            class="row flex-column flex-lg-row align-items-center justify-content-between hit-room-card"
+          >
+            <div class="col-lg-6">
+              <div class="row vip-room justify-content-between">
+                <div class="col-lg-6 vip-img">
+                  <img
+                    class="img-fluid d-none d-lg-flex"
+                    src="./images/hit-room-img.png"
+                    alt="Rooms Images"
+                  />
+                  <img
+                    class="img-fluid d-lg-none"
+                    src="./images/hit-room-img-mobile.png"
+                    alt="Rooms Images"
+                  />
+                </div>
+                <div class="col-lg-6 vip-content">
+                  <div class="rooms-detail">
+                    <h3>VIP Room</h3>
+                    <div class="sunflower d-flex align-items-center">
+                      <img src="./images/map-room.png" alt="" />
+                      <span>567 Sunflower Lane</span>
+                    </div>
+                    <div class="facility d-flex flex-column">
+                      <div
+                        class="bed-ac d-flex justify-content-start align-items-center"
+                      >
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/bed-room.png"
+                            alt=""
+                          />
+                          <span>3 Beds</span>
+                        </div>
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/air-condition-room.png"
+                            alt=""
+                          />
+
+                          <span>1 Ac</span>
+                        </div>
+                      </div>
+                      <div
+                        class="bed-ac d-flex justify-content-start align-items-center"
+                      >
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/bed-room.png"
+                            alt=""
+                          />
+                          <span>2 Baths</span>
+                        </div>
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/wifi-room.png"
+                            alt=""
+                          />
+
+                          <span>Free Wifi</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="per-night-price">$130.000 / Night</h2>
+                    <button>BOOK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="row vip-room justify-content-between">
+                <div class="col-lg-6 vip-img">
+                  <img
+                    class="img-fluid d-none d-lg-flex"
+                    src="./images/hit-room-img.png"
+                    alt="Rooms Images"
+                  />
+                  <img
+                    class="img-fluid d-lg-none"
+                    src="./images/hit-room-img-mobile.png"
+                    alt="Rooms Images"
+                  />
+                </div>
+                <div class="col-lg-6 vip-content">
+                  <div class="rooms-detail">
+                    <h3>VIP Room</h3>
+                    <div class="sunflower d-flex align-items-center">
+                      <img src="./images/map-room.png" alt="" />
+                      <span>567 Sunflower Lane</span>
+                    </div>
+                    <div class="facility d-flex flex-column">
+                      <div
+                        class="bed-ac d-flex justify-content-start align-items-center"
+                      >
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/bed-room.png"
+                            alt=""
+                          />
+                          <span>3 Beds</span>
+                        </div>
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/air-condition-room.png"
+                            alt=""
+                          />
+
+                          <span>1 Ac</span>
+                        </div>
+                      </div>
+                      <div
+                        class="bed-ac d-flex justify-content-start align-items-center"
+                      >
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/bed-room.png"
+                            alt=""
+                          />
+                          <span>2 Baths</span>
+                        </div>
+                        <div class="bed-gap d-flex align-items-center">
+                          <img
+                            class="img-fluid"
+                            src="./images/wifi-room.png"
+                            alt=""
+                          />
+
+                          <span>Free Wifi</span>
+                        </div>
+                      </div>
+                    </div>
+                    <h2 class="per-night-price">$130.000 / Night</h2>
+                    <button>BOOK</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Making the Best Residance -->
+
+    <section class="residency-pad-blk">
+      <div class="container">
+        <div
+          class="residancy d-flex flex-column-reverse flex-lg-row align-items-center justify-content-center"
+        >
+          <div class="residancy-content col-lg-6">
+            <h2>We are Expert in</h2>
+            <h3>Making the Best Residance</h3>
+            <p class="lorem-para-residency">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              convallis est nisi, sit amet pharetra lorem vestibulum et.
+              Praesent interdum et mauris in viverra.
+            </p>
+            <div class="best-home">
+              <h4>“We are the best Home Stay for you”</h4>
+              <p class="best-para">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur convallis est nisi, sit amet pharetra lorem vestibulum
+                et.
+              </p>
+              <div
+                class="woody d-flex justify-content-between align-items-center"
+              >
+                <p class="woody-para">Woody Woodpecker</p>
+                <span>CEO of HumaStay</span>
+              </div>
+            </div>
+          </div>
+          <div class="residancy-img col-lg-6">
+            <img
+              class="img-fluid d-none d-lg-flex"
+              src="./images/rediency-img.png"
+              alt="House img"
+            />
+            <img
+              class="img-fluid d-lg-none"
+              src="./images/redidency-img-mobile.png"
+              alt="House img"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="residency-pos-parent d-flex justify-content-start align-items-end"
+      >
+        <div
+          class="residency-pos-yellow d-flex flex-column justify-content-center align-items-center"
+        >
+          <h5>Experienced <span class="d-none d-lg-flex"></span></h5>
+          <p>Over 10 Years <span class="d-lg-none"></span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Facilities -->
+
+    <section class="facility-pad-blk">
+      <div class="container">
+        <div class="facility-heading text-center">
+          <h2>Our Facilities</h2>
+          <p>We Do Our Best Facilities Provide You</p>
+        </div>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-center align-items-center facility-cards mb-5"
+        >
+          <div class="facility-card">
+            <img src="./images/facility-img-1.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-1.png" alt="icon iamge" />
+              <span class="facility-name">Private Workspace <br />office</span>
+            </div>
+          </div>
+          <div class="facility-card">
+            <img src="./images/facility-img-2.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-2.png" alt="icon iamge" />
+              <span class="facility-name">Breakfast</span>
+            </div>
+          </div>
+          <div class="facility-card">
+            <img src="./images/facility-img-3.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-3.png" alt="icon iamge" />
+              <span class="facility-name">Exercise Space</span>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column flex-lg-row justify-content-center align-items-center facility-cards pt-5"
+        >
+          <div class="facility-card">
+            <img src="./images/facility-img-4.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-4.png" alt="icon iamge" />
+              <span class="facility-name">Free Wifi</span>
+            </div>
+          </div>
+          <div class="facility-card">
+            <img src="./images/facility-img-5.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-5.png" alt="icon iamge" />
+              <span class="facility-name">Swimming Pool</span>
+            </div>
+          </div>
+          <div class="facility-card">
+            <img src="./images/facility-img-6.png" alt="facility image" />
+            <div
+              class="facility-card-content d-flex justify-content-between align-items-center"
+            >
+              <img src="./images/facility-icon-6.png" alt="icon iamge" />
+              <span class="facility-name">Parking Area</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Us  -->
+
+    <section class="contact-pad-blk">
+      <div class="container">
+        <div
+          class="contact-parent d-flex flex-column-reverse flex-lg-row justify-content-center align-items-center"
+        >
+          <div class="contact-content col-lg-6">
+            <img
+              class="img-fluid"
+              src="./images/contact-img.png"
+              alt="loaction image"
+            />
+            <div
+              class="subrabaya-parent d-flex flex-column flex-lg-row justify-content-around align-items-center"
+            >
+              <div class="surbaya d-flex flex-column">
+                <h2>Surbaya</h2>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/Phonecontact.png" alt="phone icon" />
+                  <p>123-456-789</p>
+                </div>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/location-contact.png" alt="phone icon" />
+                  <p>location</p>
+                </div>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/email-contact.png" alt="phone icon" />
+                  <p>HumaStay@gmail.com</p>
+                </div>
+              </div>
+              <div class="surbaya d-flex flex-column">
+                <h2>Malang</h2>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/Phonecontact.png" alt="phone icon" />
+                  <p>123-456-789</p>
+                </div>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/location-contact.png" alt="phone icon" />
+                  <p>location</p>
+                </div>
+                <div class="phone d-flex align-items-center">
+                  <img src="./images/email-contact.png" alt="phone icon" />
+                  <p>HumaStay@gmail.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-form col-lg-6">
+            <div class="form-parent">
+              <h2>Contact us</h2>
+              <form class="d-flex flex-column form-contact-us">
+                <input type="text" placeholder="First Name" />
+                <input type="text" placeholder="Last Name" />
+                <input type="text" placeholder="Email" />
+                <input type="text" placeholder="Phone Number" />
+                <textarea placeholder="Write your message.."></textarea>
+                <input type="submit" name="Send Message" value="Send Message" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="residency-pos-parent d-flex justify-content-end align-items-end contact-pos-parent"
+      >
+        <div
+          class="residency-pos-yellow d-flex flex-column justify-content-center align-items-start"
+        >
+          <h5>Get in touch<span></span></h5>
+          <p>For More Information</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer class="footer-pad-blk">
+      <div class="container">
+        <div
+          class="footer-parent d-flex flex-column flex-lg-row justify-content-between align-items-start"
+        >
+          <div class="footer">
+            <img
+              class="img-fluid d-none d-lg-flex"
+              src="./images/company-logo.png"
+              alt="Company logo"
+            />
+            <p>
+              Stay up to date with the latest news, announcements, and
+              articles..
+            </p>
+            <div class="footer-foam d-flex justify-content-between">
+              <input type="text" placeholder="Subscribe" />
+              <input type="submit" value="Subscribe" />
+            </div>
+          </div>
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul class="d-flex flex-column social-links-anchar">
+              <li>Home</li>
+              <li>About Us</li>
+              <li>Home Stay</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Our Services</h3>
+            <ul class="d-flex flex-column social-links-anchar">
+              <li>Custom Room</li>
+              <li>Property Management</li>
+              <li>Security Guarantee</li>
+              <li>Sketch House</li>
+            </ul>
+          </div>
+          <div class="footer-links">
+            <h3>Legal</h3>
+            <ul class="d-flex flex-column social-links-anchar">
+              <li>Return Policy</li>
+              <li>Shipping Policy</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Services</li>
+            </ul>
+          </div>
+        </div>
+        <hr class="hr-line" />
+        <div
+          class="copy-right d-flex justify-content-between align-items-center"
+        >
+        <img class="d-lg-none" src="./images/company-logo-mobile.png" alt="company-logo">
+          <div class="apps d-flex align-items-center">
+            <img src="./images/WhatsApp.png" alt="apps icon" />
+            <img src="./images/Facebook.png" alt="apps icon" />
+            <img src="./images/Instagram.png" alt="apps icon" />
+          </div>
+          <p class="d-none d-lg-none"><span>©</span>2024 HumaStay. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+</html>

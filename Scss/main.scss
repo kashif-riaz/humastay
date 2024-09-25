@@ -1,0 +1,948 @@
+@import "./variable";
+@import "./mixin";
+
+.play {
+  font-family: "Playfair Display", serif;
+}
+
+// Header Section Start
+
+.header-hero-bg {
+  background: url(../images/hero-img.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  padding-block: 1rem;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding: 0rem;
+  font-size: $fs-18;
+  font-weight: $fw-600;
+  color: $green-color;
+  &:hover {
+    color: $yelllow-color;
+  }
+}
+
+.navbar-expand-lg .navbar-nav {
+  gap: 5rem;
+}
+
+.navbar-light .navbar-toggler {
+  color: none;
+  border: none;
+
+  &:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
+.navbar-toggler {
+  padding: 0;
+  border: none;
+}
+
+.navbar {
+  padding: 0;
+}
+
+// Hero-section Start
+
+.hero-section {
+  position: relative;
+  padding-block: 18rem 24rem;
+
+  h1 {
+    font-size: $fs-48;
+    max-width: 550px;
+    font-weight: $fw-600;
+    color: $green-color;
+    line-height: 5.2rem;
+  }
+  .hero-para {
+    font-size: $fs-20;
+    padding-top: 2.4rem;
+    color: $black-color;
+    line-height: 2.4rem;
+    max-width: 540px;
+  }
+}
+
+.detail {
+  position: absolute;
+  bottom: -25%;
+  transform: translateY(-75%);
+  background-color: $yelllow-color;
+  padding: 4rem;
+  gap: 1.6rem;
+  border-radius: 2rem;
+
+  .location {
+    width: 328px;
+    border-radius: 1.2rem;
+    padding: 1.5rem 2rem;
+    background-color: $white-color;
+    .location-para {
+      .loc-para {
+        font-size: $fs-18;
+        font-weight: $fw-600;
+        color: $black-grey-color;
+      }
+    }
+  }
+  .detail-btn {
+    @include button($green-color, $white-color, none);
+  }
+}
+
+// Our Hits Room’s
+
+.hit-rooms-parent {
+  padding-block: 10.4rem 4.7rem;
+  h2 {
+    font-size: $fs-48;
+    font-weight: $fw-700;
+    color: $green-color;
+    font-style: italic;
+    font-family: "Playfair Display", serif;
+  }
+  p {
+    font-size: $fs-28;
+    font-weight: $fw-600;
+    padding-block: 2.6rem 4.8rem;
+  }
+  .hit-btn {
+    gap: 3.5rem;
+    button {
+      @include button(transparent, $yelllow-color, $yelllow-color);
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $green-color;
+        border: 2px solid $green-color;
+        color: $white-color;
+      }
+    }
+  }
+}
+
+.vip-room {
+  border-radius: 5rem;
+  border: 1px solid $green-color;
+  background: #fffbe8;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+  .vip-img {
+    img {
+      border-top-left-radius: 5rem;
+      border-bottom-left-radius: 5rem;
+      height: 100%;
+    }
+  }
+
+  .vip-content {
+    align-self: center;
+    .rooms-detail {
+      padding: 3.4rem;
+      h3 {
+        font-size: $fs-18;
+        font-weight: $fw-600;
+        color: #2a2a2a;
+      }
+      .sunflower {
+        img {
+          margin-right: 0.6rem;
+        }
+        span {
+          padding-block: 1.2rem 2rem;
+          font-size: $fs-18;
+          font-weight: $fw-600;
+          color: $black-grey-color;
+        }
+      }
+      .facility {
+        gap: 1.6rem;
+        .bed-ac {
+          gap: 3.2rem;
+          font-size: $fs-16;
+          color: $black-grey-color;
+          font-weight: $fw-500;
+          .bed-gap {
+            gap: 0.6rem;
+          }
+        }
+      }
+      .per-night-price {
+        font-style: normal;
+        font-size: $fs-24;
+        padding-block: 2.4rem 3.2rem;
+        font-weight: $fw-600;
+        color: $mint-green-color;
+      }
+      button {
+        @include button($green-color, $white-color, none);
+        min-width: 145px;
+      }
+    }
+  }
+}
+
+.hit-room-card {
+  margin-top: 4.7rem;
+}
+
+// Making the Best Residance
+
+.residency-pad-blk {
+  padding-block: 11rem 11rem;
+  background-color: #fffbe8;
+  position: relative;
+}
+
+.residancy {
+  .residancy-content {
+    padding-right: 3rem;
+    h2 {
+      font-size: $fs-48;
+      font-weight: $fw-700;
+      color: $green-color;
+    }
+    h3 {
+      font-size: $fs-40;
+      font-weight: $fw-600;
+      color: $green-color;
+      padding-block: 2rem 3rem;
+    }
+    .lorem-para-residency {
+      font-size: $fs-28;
+      color: #181818;
+    }
+    .best-home {
+      margin-top: 5rem;
+      background-color: $white-color;
+      padding: 6rem 5rem;
+      border-radius: 2.5rem;
+      border-left: 4px solid $green-color;
+      h4 {
+        font-size: $fs-24;
+        color: #181818;
+        font-weight: $fw-600;
+      }
+      .best-para {
+        padding-block: 4.6rem;
+        font-size: $fs-16;
+        color: #181818;
+        font-weight: $fw-500;
+      }
+      .woody {
+        .woody-para {
+          font-size: $fs-18;
+          color: $black-color;
+          font-weight: $fw-600;
+        }
+        span {
+          font-size: $fs-16;
+          color: $green-color;
+          font-weight: $fw-600;
+        }
+      }
+    }
+  }
+  .residancy-img {
+    align-self: flex-end;
+    img {
+      border-radius: 5rem;
+    }
+  }
+}
+
+.residency-pos-parent {
+  position: absolute;
+  top: 2%;
+  right: 0;
+  background-color: $green-color;
+  border-radius: 50px 0px 0px 50px;
+  width: 424px;
+  height: 289px;
+  .residency-pos-yellow {
+    gap: 2.4rem;
+    border-radius: 0px 50px 0px 50px;
+    background: $yelllow-color;
+    width: 264px;
+    height: 196.923px;
+    h5 {
+      font-size: $fs-24;
+      font-weight: $fw-600;
+      color: $green-color;
+      display: flex;
+      span {
+        width: 30px;
+        align-self: flex-end;
+        height: 2px;
+        background-color: $green-color;
+      }
+    }
+    p {
+      font-size: $fs-24;
+      color: $white-color;
+    }
+  }
+}
+
+// Our Facility
+
+.facility-pad-blk {
+  padding-block: 4rem 6rem;
+  background-color: $yelllow-color;
+}
+
+.facility-heading {
+  h2 {
+    font-size: $fs-48;
+    font-weight: $fw-700;
+    color: $green-color;
+    font-style: italic;
+  }
+  p {
+    padding-block: 1.2rem 8rem;
+    font-size: $fs-28;
+    font-weight: $fw-600;
+    color: $green-color;
+  }
+}
+
+.facility-cards {
+  gap: 4rem;
+  .facility-card {
+    min-width: 372px;
+    min-height: 390px;
+    background-color: $white-color;
+    padding: 3rem;
+    border-radius: 5rem;
+    img {
+      border-radius: 5rem;
+    }
+    .facility-card-content {
+      padding-inline: 1rem;
+      margin-top: 1.6rem;
+      .facility-name {
+        color: $green-color;
+        font-size: 2.4rem;
+        font-weight: $fw-600;
+      }
+    }
+  }
+}
+
+// Contact Us
+
+.contact-pad-blk {
+  padding-block: 10rem 6.3rem;
+  position: relative;
+}
+
+.contact-parent {
+  .contact-content {
+    padding-right: 3rem;
+    img {
+      border-radius: 5rem;
+    }
+    .subrabaya-parent {
+      margin-top: 4rem;
+      .surbaya {
+        gap: 3rem;
+        h2 {
+          font-size: $fs-28;
+          font-weight: $fw-600;
+          color: $green-color;
+        }
+        .phone {
+          gap: 1.2rem;
+          p {
+            font-size: $fs-18;
+            font-weight: $fw-600;
+            color: #181818;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-form {
+    .form-parent {
+      padding: 5rem 4rem;
+      border-radius: 50px;
+      border: 1px solid $green-color;
+      h2 {
+        font-size: $fs-40;
+        font-weight: $fw-600;
+        color: $green-color;
+        padding-bottom: 2.4rem;
+      }
+      .form-contact-us {
+        gap: 4rem;
+        input[type="text"] {
+          background-color: #f6f6f6;
+          border: 1px solid $green-color;
+          padding: 1.7rem 1.6rem;
+          border-radius: 1.2rem;
+          font-size: $fs-16;
+          font-weight: $fw-600;
+          color: #ababab;
+          &:focus {
+            outline: none;
+            color: $black-color;
+          }
+        }
+        textarea {
+          text-align: start;
+          background-color: #f6f6f6;
+          border: 1px solid $green-color;
+          border-radius: 1.2rem;
+          padding: 1.7rem 1.6rem;
+          font-size: $fs-16;
+          width: 100%;
+          height: 200px;
+          font-weight: $fw-600;
+          resize: none;
+          color: #ababab;
+          &:focus {
+            outline: none;
+            color: $black-color;
+          }
+        }
+        input[type="submit"] {
+          border: none;
+          background-color: $green-color;
+          padding: 1.7rem 3rem;
+          border-radius: 1.2rem;
+          font-size: $fs-18;
+          min-width: 200px;
+          width: fit-content;
+          color: $white-color;
+          border: 2px solid transparent;
+          font-weight: $fw-600;
+        }
+      }
+    }
+  }
+}
+
+.contact-pos-parent {
+  top: 7%;
+  left: 0;
+}
+
+.contact-pos-parent {
+  position: absolute;
+  background-color: $green-color;
+  border-radius: 0px 50px 50px 0px;
+  width: 461px;
+  height: 221px;
+  .residency-pos-yellow {
+    padding: 5rem;
+    gap: 2.4rem;
+    border-radius: 50px 0px 50px 0px;
+    background: $yelllow-color;
+    width: 329px;
+    height: 160px;
+  }
+}
+
+// Footer
+
+.footer-pad-blk {
+  padding-block: 4.9rem 4rem;
+  background-color: $yelllow-color;
+}
+
+.footer-parent {
+  .footer {
+    p {
+      font-size: $fs-16;
+      font-weight: $fw-500;
+      color: $green-color;
+      line-height: 2rem;
+      padding-block: 2.6rem;
+      max-width: 500px;
+    }
+    .footer-foam {
+      border-radius: 1.4em;
+      border: 2px solid $green-color;
+      background-color: #f6f6f6;
+      input[type="text"] {
+        background-color: transparent;
+        border: none;
+        font-size: $fs-16;
+        font-weight: $fw-600;
+        color: #ababab;
+        padding: 1.7rem 1.6rem;
+        &:focus {
+          outline: none;
+        }
+      }
+      input[type="submit"] {
+        border: none;
+        background-color: $green-color;
+        padding: 1.7rem 3rem;
+        border-radius: 1rem;
+        font-size: $fs-18;
+        min-width: 200px;
+        width: fit-content;
+        color: $white-color;
+        border: 2px solid $green-color;
+        font-weight: $fw-600;
+      }
+    }
+  }
+  .footer-links {
+    h3 {
+      font-size: $fs-28;
+      font-weight: $fw-700;
+      color: $green-color;
+      padding-bottom: 1.6rem;
+    }
+    .social-links-anchar {
+      gap: 2rem;
+      li {
+        font-size: $fs-14;
+        font-weight: $fw-500;
+        color: $white-color;
+        &:hover {
+          color: $green-color;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.hr-line {
+  color: $green-color;
+  margin-block: 2rem 1rem;
+}
+
+.copy-right {
+  .apps {
+    gap: 2.4rem;
+    img {
+      cursor: pointer;
+    }
+  }
+  p {
+    font-size: $fs-14;
+    font-weight: $fw-500;
+    color: $green-color;
+    span {
+      padding-right: 0.7rem;
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  // Container
+
+  .container {
+    padding-inline: 2rem;
+  }
+
+  // Header Section Start
+
+  .header-hero-bg {
+    background: none;
+    background-color: #fffbe8;
+  }
+
+  header {
+    padding-block: 2rem;
+    background: #fffbe8;
+    box-shadow: 0px 4px 4px 0px #07617d;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    gap: 2rem;
+    text-align: center;
+  }
+
+  // Hero-section Start
+
+  .hero-section {
+    padding-block: 2.5rem 10.4rem;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      padding-top: 1.2rem;
+      text-align: center;
+      font-size: $fs-36;
+      line-height: 4.4rem;
+    }
+    .hero-para {
+      margin-top: 1.2rem;
+      padding: 0;
+      font-size: $fs-16;
+      color: $black-color;
+      line-height: 2rem;
+    }
+  }
+
+  .detail {
+    position: absolute;
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2rem;
+    gap: 1.6rem;
+    min-width: 355px;
+    border-radius: 2rem;
+    .location {
+      width: 137px;
+      padding: 1.5rem 2rem;
+    }
+    .detail-btn {
+      min-width: 137px;
+    }
+  }
+
+  // Our Hits Room’s
+
+  .hit-room-card {
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+
+  .hit-rooms-parent {
+    padding-block: 10.4rem 4.7rem;
+    h2 {
+      font-size: $fs-48;
+      font-weight: $fw-700;
+      color: $green-color;
+      font-style: italic;
+      font-family: "Playfair Display", serif;
+    }
+    p {
+      font-size: $fs-28;
+      font-weight: $fw-600;
+      padding-block: 2.6rem 4.8rem;
+    }
+    .hit-btn {
+      gap: 3.5rem;
+      button {
+        @include button(transparent, $yelllow-color, $yelllow-color);
+        transition: all 0.3s ease-in-out;
+        &:hover {
+          background-color: $green-color;
+          border: 2px solid $green-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .vip-room {
+    border-radius: 5rem;
+    border: 1px solid $green-color;
+    background: #fffbe8;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+    .vip-img {
+      img {
+        border-top-left-radius: 5rem;
+        border-bottom-left-radius: 5rem;
+        height: 100%;
+      }
+    }
+
+    .vip-content {
+      align-self: center;
+      .rooms-detail {
+        padding: 0.8rem;
+        .sunflower {
+          img {
+            margin-right: 0.6rem;
+          }
+          span {
+            padding-block: 0.9rem 1.4rem;
+            font-size: $fs-14;
+            font-weight: $fw-600;
+            color: $black-grey-color;
+          }
+        }
+        .facility {
+          gap: 1rem;
+          .bed-ac {
+            gap: 3.2rem;
+            font-size: $fs-14;
+            color: $black-grey-color;
+            font-weight: $fw-500;
+            .bed-gap {
+              gap: 0.6rem;
+            }
+          }
+        }
+        .per-night-price {
+          font-size: $fs-18;
+          padding-block: 1.3rem 0.9rem;
+          font-weight: $fw-600;
+          color: $mint-green-color;
+        }
+        button {
+          @include button($green-color, $white-color, none);
+          min-width: 145px;
+        }
+      }
+    }
+  }
+  // Making the Best Residance
+
+  .residency-pad-blk {
+    padding-block: 4.8rem 2.9rem;
+  }
+
+  .residancy {
+    gap: 2rem;
+
+    .residancy-content {
+      text-align: center;
+      h2 {
+        font-size: $fs-36;
+      }
+      h3 {
+        font-size: $fs-24;
+        font-weight: $fw-400;
+        padding-block: 1rem 1.6rem;
+      }
+      .lorem-para-residency {
+        font-size: $fs-20;
+        line-height: 2.4rem;
+      }
+      .best-home {
+        margin-top: 2.2rem;
+        background-color: $white-color;
+        padding: 4.7rem 3rem;
+        border-radius: 2.5rem;
+        border-left: 2px solid $green-color;
+
+        .best-para {
+          padding-block: 4.6rem;
+          font-size: $fs-16;
+          line-height: 2.8rem;
+        }
+        .woody {
+          .woody-para {
+            font-size: $fs-14;
+          }
+        }
+      }
+    }
+    .residancy-img {
+      img {
+        border-radius: 2.5rem;
+      }
+    }
+  }
+
+  .residency-pos-parent {
+    border-radius: 25px 0px 0px 25px;
+    width: 194px;
+    height: 108px;
+    .residency-pos-yellow {
+      width: 168px;
+      height: 84px;
+      border-radius: 0px 25px 0px 25px;
+      h5 {
+        font-size: $fs-18;
+        color: $green-color;
+        span {
+          width: 30px;
+          height: 2px;
+          display: inline-block;
+          background-color: $green-color;
+        }
+      }
+      p {
+        font-size: $fs-18;
+        color: $white-color;
+        span {
+          width: 20.693px;
+          height: 2px;
+          display: inline-block;
+          background-color: $green-color;
+        }
+      }
+    }
+  }
+
+  // Our Facility
+
+  .facility-pad-blk {
+    padding-block: 4rem 6rem;
+    background-color: $yelllow-color;
+  }
+
+  .facility-heading {
+    h2 {
+      font-size: $fs-36;
+    }
+    p {
+      padding-bottom: 2rem;
+      font-size: $fs-18;
+    }
+  }
+
+  .mb-5 {
+    margin: 0 !important;
+  }
+
+  .facility-cards {
+    gap: 2rem;
+    .facility-card {
+      min-width: 300px;
+      min-height: 300px;
+      background-color: $white-color;
+      padding: 1.6rem;
+      img {
+        border-radius: 5rem;
+        max-width: 100%;
+        height: auto;
+      }
+      .facility-card-content {
+        .facility-name {
+          color: $green-color;
+          font-size: 2rem;
+          font-weight: $fw-600;
+        }
+      }
+    }
+  }
+
+  // Contact Us
+
+  .contact-pad-blk {
+    padding-block: 6rem 2rem;
+    position: relative;
+  }
+
+  .contact-parent {
+    gap: 9rem;
+    .contact-content {
+      padding-right: 0rem;
+      img {
+        border-radius: 5rem;
+      }
+      .subrabaya-parent {
+        margin-top: 3rem;
+        gap: 3rem;
+        align-items: flex-start !important;
+        .surbaya {
+          gap: 4rem;
+          h2 {
+            font-size: $fs-28;
+            font-weight: $fw-600;
+            color: $green-color;
+          }
+          .phone {
+            gap: 1.2rem;
+            p {
+              font-size: $fs-18;
+              font-weight: $fw-600;
+              color: #181818;
+            }
+          }
+        }
+      }
+    }
+
+    .contact-form {
+      .form-parent {
+        padding: 2.5rem 3rem;
+        h2 {
+          text-align: center;
+        }
+        .form-contact-us {
+          gap: 1.6rem;
+          textarea {
+            width: 285px;
+            height: 115px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-pos-parent {
+    top: 44%;
+    left: 0;
+  }
+
+  .contact-pos-parent {
+    position: absolute;
+    background-color: $green-color;
+    border-radius: 0px 25px 25px 0px;
+    width: 250px;
+    height: 115px;
+    font-size: $fs-16;
+    .residency-pos-yellow {
+      font-size: $fs-16;
+      padding: 0rem;
+      padding-left: 1.2rem;
+      gap: 0rem;
+      border-radius: 25px 0px 25px 0px;
+      background: $yelllow-color;
+      width: 220px;
+      height: 68px;
+    }
+  }
+
+  // Footer
+
+  .footer-pad-blk {
+    padding-block: 1.6rem 2rem;
+  }
+
+  .footer-parent {
+    .footer {
+      p {
+        padding-block: 0.5rem 2.6rem;
+        max-width: 100%;
+      }
+      .footer-foam {
+        input[type="text"] {
+          background-color: transparent;
+          padding: 1.6rem;
+          width: 142px;
+        }
+        input[type="submit"] {
+          padding: 1.2rem;
+          min-width: 149px;
+        }
+      }
+    }
+    .footer-links {
+      margin-top: 2rem;
+    }
+  }
+}
+
+// Media Query For Small Device
+
+@media screen and (max-width: 340px) {
+  .detail {
+    position: absolute;
+    bottom: -12%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    gap: 1rem;
+    min-width: 310px;
+    border-radius: 2rem;
+  }
+}
